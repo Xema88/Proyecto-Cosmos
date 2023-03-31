@@ -20,9 +20,9 @@ grid-template-areas:
 /*preguntar al cliente de que color va a querer el fondo y en contraste las letras de cadda cosa h1 enlaces y las letras normales*/
 aside{
     grid-area: aside;
-    border-top: 2px white solid;
-    border-left: 2px white solid;
-    border-bottom: 2px white solid;
+    
+    border-right: 2px white solid;
+    
     height: fit-content;
 }
 main{
@@ -31,9 +31,9 @@ main{
 }
 #contenidos{
     display: flex;
-    border-top: 2px white solid;
+   
     padding-left: 1%;
-    border-bottom: 2px white solid;
+    
 }
 main p{
     margin: 1%;
@@ -47,9 +47,9 @@ header{
     display: flex;
     justify-content: space-between;
 }
-#biologia{
+#etimologia{
 
-    border-left: 2px white solid;
+    border-right: 2px white solid;
 
 }
 h2{
