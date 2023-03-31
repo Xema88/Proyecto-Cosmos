@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Tw Cen MT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Tw Cen MT'), url('Tw Cen MT.woff') format('woff');
+    }
+    *{
+        font-family:TW Cen MT;
+    }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: grid;
+grid-template-columns: 5vw,60vw,25vw;
+grid-template-areas: 
+ "header header header"
+ "aside main main"
+"footer footer footer";}
+/*preguntar al cliente de que color va a querer el fondo y en contraste las letras de cadda cosa h1 enlaces y las letras normales*/
+aside{
+    grid-area: aside;
+    border-top: 2px white solid;
+    border-left: 2px white solid;
+    border-bottom: 2px white solid;
+    height: fit-content;
+}
+main{
+    grid-area: main;
+    border: 2px white solid;
+}
+#contenidos{
+    display: flex;
+    border-top: 2px white solid;
+    padding-left: 1%;
+    border-bottom: 2px white solid;
+}
+main p{
+    margin: 1%;
+}
+/*en una proxima ctualizacion del proyecto se cambiara l footer junto a los tamaños de fuente */
+footer{
+    grid-area: footer;
+}
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+#biologia{
+
+    border-left: 2px white solid;
+
+}
+h2{
+    width: 100%;
+}
+body{
+    background-color: black ;
+    color: white;
+}
+a{color: rgb(243, 181, 65);
+text-decoration: none;}
+aside li:hover{background-color:rgba(255, 255, 75, 0.575)}
+aside a:hover{text-shadow:rgba(253, 253, 71, 0.705)}
+
