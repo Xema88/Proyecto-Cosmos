@@ -10,13 +10,14 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    display: grid;
-grid-template-columns: 5vw,60vw,25vw;
-grid-template-areas: 
- "header header header"
- "aside main main"
-"footer footer footer";}
+    body{
+        display: grid;
+    grid-template-columns: 5vw , 60vw , 25vw;
+    grid-template-areas: 
+     "header header header"
+     "aside main main"
+    "footer footer footer";}
+
 /*preguntar al cliente de que color va a querer el fondo y en contraste las letras de cadda cosa h1 enlaces y las letras normales*/
 aside{
     grid-area: aside;
@@ -27,11 +28,11 @@ aside{
 }
 main{
     grid-area: main;
-    border: 2px white solid;
+    
 }
 #contenidos{
     display: flex;
-   
+    
     padding-left: 1%;
     
 }
@@ -41,10 +42,11 @@ main p{
 /*en una proxima ctualizacion del proyecto se cambiara l footer junto a los tamaños de fuente */
 footer{
     grid-area: footer;
+    font-size: xx-small;
 }
 header{
     grid-area: header;
-    display: flex;
+    
     justify-content: space-between;
 }
 #etimologia{
@@ -52,8 +54,8 @@ header{
     border-right: 2px white solid;
 
 }
-h2{margin-top:0;
-    width: 100%;
+h2{
+    width: 98%;
 }
 body{
     background-color: black ;
