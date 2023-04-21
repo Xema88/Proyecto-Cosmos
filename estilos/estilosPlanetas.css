@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Tw Cen MT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Tw Cen MT'), url('Tw Cen MT.woff') format('woff');
+    }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:TW Cen MT;
+}
