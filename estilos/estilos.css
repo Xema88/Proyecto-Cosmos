@@ -72,3 +72,61 @@ position: fixed;
 bottom: 2%;
 }
 /*para posteriores modificaciones necesito el javascript del menu hecho*/
+
+/*CSS DEL MENÚ*/
+button#menu-button {
+  background-color: #007bff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30%;
+  background-color: grey;
+}
+  
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+  
+#menu li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#menu li:hover {
+  background-color: #eee;
+}
+
+#menu a {
+  color: #333;
+  text-decoration: none;
+}
+  
+#menu a:hover {
+  color: #007bff;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+}
+  
+  /* Estilos para mostrar el menú al hacer clic en el botón */
+button#menu-button:focus + #menu {
+  display: block;
+}
+  
+button#menu-button:focus + #menu {
+  display: block;
+}
+  
