@@ -10,13 +10,6 @@
 html{
     scroll-behavior: smooth;
 }
-    body{
-        display: grid;
-    grid-template-columns: 5vw , 60vw , 25vw;
-    grid-template-areas: 
-     "header header header"
-     "aside main main"
-    "footer footer footer";}
 
 /*preguntar al cliente de que color va a querer el fondo y en contraste las letras de cadda cosa h1 enlaces y las letras normales*/
 aside{
@@ -71,9 +64,6 @@ right: 2%;
 position: fixed;
 bottom: 2%;
 }
-/*para posteriores modificaciones necesito el javascript del menu hecho*/
-
-/*CSS DEL MENÚ*/
 button#menu-button {
   background-color: #007bff;
   padding: 10px 15px;
@@ -83,12 +73,20 @@ button#menu-button {
 }
 
 #menu {
-  display: none;
+  display: block;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -25em;
+  width: 17em;
   height: 100%;
-  width: 30%;
+  overflow-y: auto;
+  z-index: 10;
+  padding: 1em 1em 0 1em;
+  -webkit-transition: left 0.5s ease-in-out 0.1s;
+  -moz-transition: left 0.5s ease-in-out 0.1s;
+  -ms-transition: left 0.5s ease-in-out 0.1s;
+  -o-transition: left 0.5s ease-in-out 0.1s;
+  transition: left 0.5s ease-in-out 0.1s;
   background-color: grey;
 }
   
@@ -122,11 +120,52 @@ body {
 }
   
   /* Estilos para mostrar el menú al hacer clic en el botón */
-button#menu-button:focus + #menu {
-  display: block;
+#menu:target  {
+display: block;
+left: 0;
+width: 17em;
+margin: 0;
+border: 1px solid #dedede;
+z-index: 10;
+
 }
-  
-button#menu-button:focus + #menu {
-  display: block;
+
+
+
+
+
+
+
+
+/*para posteriores modificaciones necesito el javascript del menu hecho*/
+@media (min-width: 1281px) and (min-height:721px){
+    body{
+        display: grid;
+    grid-template-columns: 5vw , 60vw , 25vw;
+    grid-template-areas: 
+     "header header header"
+     " main main main"
+    "footer footer footer";}
+
 }
-  
+
+@media (min-width: 801px) and (min-height:601px){
+    body{
+        display: grid;
+    grid-template-columns: 5vw , 60vw , 25vw;
+    grid-template-areas: 
+     "header header header"
+     " main main main"
+    "footer footer footer";}
+
+}
+@media (max-width: 800px) and (max-height:600px){
+    body{
+        display: grid;
+    grid-template-columns: 5vw , 94vw;
+    grid-template-areas: 
+     "header header"
+     "main main"
+    "footer footer";}
+
+}
