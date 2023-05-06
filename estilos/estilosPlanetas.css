@@ -4,73 +4,117 @@
     font-weight: normal;
     src: local('Tw Cen MT'), url('Tw Cen MT.woff') format('woff');
     }
-    *{
-        font-family:TW Cen MT;
-    }
+
+*{
+    font-family:TW Cen MT;
+}
 html{
     scroll-behavior: smooth;
-}
-h1{
-    float: left;
-}
-/*preguntar al cliente de que color va a querer el fondo y en contraste las letras de cadda cosa h1 enlaces y las letras normales*/
-aside{
-    grid-area: aside;
-    
-    border-right: 2px white solid;
-    
-    height: fit-content;
-}
-main{
-    grid-area: main;
-    
-}
-#contenidos{
-    display: flex;
-    
-    padding-left: 1%;
-    
-}
-main p{
-    margin: 1%;
-}
-/*en una proxima ctualizacion del proyecto se cambiara l footer junto a los tamaños de fuente */
-footer{
-    grid-area: footer;
-    font-size: xx-small;
-}
-header{
-    grid-area: header;
-    
-    justify-content: space-between;
-}
-#etimologia{
-
-    border-right: 2px white solid;
-
-}
-h2{
-    width: 98%;
 }
 body{
     background-color: black ;
     color: white;
+    margin: 0;
+    padding: 0;
 }
+
+h2{width: 98%;}
 a{color: rgb(243, 181, 65);
-text-decoration: none;}
-aside li:hover{background-color:rgba(255, 255, 75, 0.575)}
-aside a:hover{text-shadow:rgba(253, 253, 71, 0.705)}
+    text-decoration: none;}
 li{list-style: none;}
-#arriba{
-    right: 2%;
+
+/*header{
+    grid-area: header;
+    justify-content: space-between;
+}*/
+
+main{
+    grid-area: main;
+}
+main p{
+    margin: 1%;
+}
+#contenidos{
+    padding-left: 1%;
+}
+
+footer{
+    grid-area: footer;
+    font-size: xx-small;
+    text-align: center;
+}
+
+#menu {
     position: fixed;
-    bottom: 2%;
-    }
-  #planeta{
-    float: right;
-  }  
-/*para posteriores modificaciones necesito el javascript del menu hecho*/
-@media (min-width: 1281px) and (min-height:721px){
+    top: 0;
+    left: -25em;
+    width: 17em;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 10;
+    padding: 1em 1em 0 1em;
+    -webkit-transition: left 0.5s ease-in-out 0.1s;
+    -moz-transition: left 0.5s ease-in-out 0.1s;
+    -ms-transition: left 0.5s ease-in-out 0.1s;
+    -o-transition: left 0.5s ease-in-out 0.1s;
+    transition: left 0.5s ease-in-out 0.1s;
+    background-color: grey;
+}
+    
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+    
+#menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+  
+#menu li:hover {
+    background-color: #eee;
+}
+  
+#menu a {
+    color: #333;
+    text-decoration: none;
+}
+    
+#menu a:hover {
+    color: #007bff;
+}
+    
+.cierremenu{
+    width: 1em;
+}
+  
+/* Estilos para mostrar el menú al hacer clic en el botón */
+#menu:target  {
+  left: 0;
+  width: 17em;
+  margin: 0;
+  border: 1px solid #dedede;
+  z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media (min-width: 1281px) and (min-height:721px){
     body{
         display: grid;
     grid-template-columns: 5vw , 60vw , 25vw;
@@ -101,3 +145,4 @@ li{list-style: none;}
     "footer footer";}
 
 }
+*/
