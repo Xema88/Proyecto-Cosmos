@@ -20,7 +20,11 @@ body{
   padding: 0;
 }
 
-h2{width: 98%;}
+h2{width: 98%;
+  width: 98%;
+  padding-top: 3%;
+  text-align: center;
+  border-top: 2px white solid;}
 a{color: rgb(243, 181, 65);
   text-decoration: none;}
 li{list-style: none;}
@@ -32,9 +36,7 @@ header{
   text-align: center;
 }
 
-.listaheader{
-  display: flex;
-}
+
 
 main{
     grid-area: main;
@@ -45,15 +47,10 @@ main p{
 }
 
 #contenidos{
-    display: flex;
+    
     padding-left: 1%;
     padding-bottom: 4em;
 }
-
-#etimologia{
-  border-right: 2px white solid;
-}
-
 #animacion{
   padding-left: 4em;
 }
@@ -78,7 +75,7 @@ footer{
   -ms-transition: left 0.5s ease-in-out 0.1s;
   -o-transition: left 0.5s ease-in-out 0.1s;
   transition: left 0.5s ease-in-out 0.1s;
-  background-color: grey;
+  background-color: #00254d;
 }
   
 #menu ul {
@@ -89,20 +86,20 @@ footer{
   
 #menu li {
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #005dc0;
 }
 
 #menu li:hover {
-  background-color: #eee;
+  background-color: #024a97;
 }
 
 #menu a {
-  color: #333;
+  color: rgb(172, 167, 167);
   text-decoration: none;
 }
   
 #menu a:hover {
-  color: #007bff;
+  color: #d4e7fa;
 }
   
 .cierremenu{
@@ -113,11 +110,20 @@ footer{
   left: 0;
   width: 17em;
   margin: 0;
-  border: 1px solid #dedede;
+  border: 1px solid #007bff;
   z-index: 10;
 }
-
-
+#boton_menu{
+  font-size:xx-large;
+  left: 2%;
+  position: fixed;
+  top: 2%;
+  }
+  #boton{
+    right: 2%;
+    position: fixed;
+    top: 2%;
+    }
 
 
 
