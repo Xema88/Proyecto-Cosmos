@@ -5,37 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página principal del proyecto Cosmos">
-    <title>Cosmos Prototipo 31-3-2023</title>
+    <title>Cosmos Prototipo 19-5-2023</title>
     <link rel="stylesheet" href="estilos/estilos.css">
     <link rel="icon" type="image/webp" href="img/logo.webp">
 </head>
 <body>
     <header>
+        <a href="#menu" id="arriba"><img class="cierremenu" src="img/menu.webp" alt="Abrir menú"></a>
         <h1>COSMOS</h1>
+        <div id="google_translate_element" class="google"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit(){
+                new google.translate.TranslateElement({pageLanguage:'es',includedLanguages:'en,es',layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true},'google_translate_element');
+                    }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </header>
-
-    <main>
-        <div id="contenidos">
-        <section id="etimologia">
-            <h2>Etimologia</h2>
-            <article>
-                <p>Placeholder #etimología</p>
-            </article>
-        </section>
-        <section id="animacion">
-            <h2>Animación interactiva del sistema solar</h2>
-            <article>
-                <iframe src="https://play.hatchxr.com/@NitishKumar/animate_basic_properties_solar_system/?embedded" allowfullscreen  allow="vr; xr; accelerometer; magnetometer; gyroscope; webvr;webxr;" height="480" width="640"  style="border:none;" id="animation"></iframe>
-            </article>
-        </section>
-        </div>
-        <p><a href="portfolio/sol.html">Página siguiente: Sol ></a></p>
-    </main>
-  
-        <div id="menu">
-            <a href="#"><img src="multimedia/arriba.webp" alt="Volver arriba" width="50px" ></a>
-          <ul>
-            <li><a href="htmlsec/sol.html">Sol</a></li>
+    <nav id="menu">
+        <a href="#"><img class="cierremenu" src="img/x.webp" alt="Volver arriba"></a>
+        <ul>
+            <li><a href="portfolio/sol.html">Sol</a></li>
             <li><a href="portfolio/mercurio.html">Mercurio</a></li>
             <li><a href="portfolio/venus.html">Venus</a></li>
             <li><a href="portfolio/tierra.html">Tierra</a></li>
@@ -45,12 +34,21 @@
             <li><a href="portfolio/saturno.html">Saturno</a></li>
             <li><a href="portfolio/urano.html">Urano</a></li>
             <li><a href="portfolio/neptuno.html">Neptuno</a></li>
-          </ul>
+        </ul>
+    </nav>
+    <main>
+        <div id="contenidos">
+            <section id="animacion">
+                <h2>Animación interactiva del sistema solar</h2>
+                <article>
+                    <iframe src="https://eyes.nasa.gov/apps/orrery/#/home" allowfullscreen  allow="vr; xr; accelerometer; magnetometer; gyroscope; webvr;webxr;" height="480" width="640"  style="border:none;" id="animation"></iframe>
+                </article>
+            </section>
         </div>
+        <p><a href="portfolio/sol.html">Página siguiente: Sol ></a></p>
+    </main>
     <footer>
-        <p>© Jose María Cañas Tébar, Luis José Almodóvar Cañas, Alfredo Agudo; 2023</p>
+        <p>&copy; Jose María Cañas Tébar, Luis José Almodóvar Cañas, Alfredo Agudo; 2023</p>
     </footer>
-
-    <a href="#menu" id="arriba"><img src="multimedia/arriba.webp" alt="Volver arriba" width="50px" ></a>
 </body>
 </html>
