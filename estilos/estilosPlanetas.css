@@ -18,21 +18,27 @@ body{
     padding: 0;
 }
 
-h2{width: 98%;}
+h2{width: 98%;
+text-align: center;
+padding-top: 3%;
+border-top: 2px white solid;}
 a{color: rgb(243, 181, 65);
     text-decoration: none;}
 li{list-style: none;}
 
-/*header{
-    grid-area: header;
-    justify-content: space-between;
-}*/
+header{
+    /*grid-area: header;*/
+    width: 100%;
+    height: 30%;
+    text-align: center;
+  }
 
 main{
-    grid-area: main;
+    margin: 4%;
 }
 main p{
     margin: 1%;
+    text-align: justify
 }
 #contenidos{
     padding-left: 1%;
@@ -58,7 +64,7 @@ footer{
     -ms-transition: left 0.5s ease-in-out 0.1s;
     -o-transition: left 0.5s ease-in-out 0.1s;
     transition: left 0.5s ease-in-out 0.1s;
-    background-color: grey;
+    background-color: #00254d;
 }
     
 #menu ul {
@@ -88,7 +94,16 @@ footer{
 .cierremenu{
     width: 1em;
 }
-  
+#boton_menu{
+    left: 2%;
+    position: fixed;
+    top: 2%;
+    }
+    #boton{
+      right: 2%;
+      position: fixed;
+      top: 2%;
+      }
 /* Estilos para mostrar el menú al hacer clic en el botón */
 #menu:target  {
   left: 0;
