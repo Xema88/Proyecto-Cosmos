@@ -52,7 +52,9 @@ main p{
     padding-bottom: 4em;
 }
 #animacion{
-  padding-left: 4em;
+  padding-bottom: 10vh;
+  height: 47.5vh;
+  width: 100%;
 }
 
 footer{
@@ -124,43 +126,3 @@ footer{
     position: fixed;
     top: 2%;
     }
-
-
-
-
-
-
-/*para posteriores modificaciones necesito el javascript del menu hecho*/
-/*
-@media (min-width: 1281px) and (min-height:721px){
-    body{
-        display: grid;
-    grid-template-columns: 5vw , 60vw , 25vw;
-    grid-template-areas: 
-     "header header header"
-     " main main main"
-    "footer footer footer";}
-
-}
-
-@media (min-width: 801px) and (min-height:601px){
-    body{
-        display: grid;
-    grid-template-columns: 5vw , 60vw , 25vw;
-    grid-template-areas: 
-     "header header header"
-     " main main main"
-    "footer footer footer";}
-
-}
-@media (max-width: 800px) and (max-height:600px){
-    body{
-        display: grid;
-    grid-template-columns: 5vw , 94vw;
-    grid-template-areas: 
-     "header header"
-     "main main"
-    "footer footer";}
-
-}
-*/
