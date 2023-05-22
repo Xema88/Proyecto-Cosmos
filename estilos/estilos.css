@@ -126,42 +126,8 @@ footer{
     top: 2%;
     }
 
-
-
-
-
-
-/*para posteriores modificaciones necesito el javascript del menu hecho*/
-/*
-@media (min-width: 1281px) and (min-height:721px){
-    body{
-        display: grid;
-    grid-template-columns: 5vw , 60vw , 25vw;
-    grid-template-areas: 
-     "header header header"
-     " main main main"
-    "footer footer footer";}
-
+#google_translate_element{
+    right: 2%;
+    position: fixed;
+    top: 5%;
 }
-
-@media (min-width: 801px) and (min-height:601px){
-    body{
-        display: grid;
-    grid-template-columns: 5vw , 60vw , 25vw;
-    grid-template-areas: 
-     "header header header"
-     " main main main"
-    "footer footer footer";}
-
-}
-@media (max-width: 800px) and (max-height:600px){
-    body{
-        display: grid;
-    grid-template-columns: 5vw , 94vw;
-    grid-template-areas: 
-     "header header"
-     "main main"
-    "footer footer";}
-
-}
-*/
