@@ -48,6 +48,7 @@ footer{
     grid-area: footer;
     font-size: xx-small;
     text-align: center;
+    padding-bottom: ;
 }
 
 #menu {
@@ -93,17 +94,15 @@ footer{
     
 .cierremenu{
     width: 1em;
+
 }
 #boton_menu{
+    font-size:xx-large;
     left: 2%;
     position: fixed;
-    top: 2%;
+    top: 5%;
     }
-    #boton{
-      right: 2%;
-      position: fixed;
-      top: 2%;
-      }
+    
 /* Estilos para mostrar el menú al hacer clic en el botón */
 #menu:target  {
   left: 0;
@@ -113,9 +112,19 @@ footer{
   z-index: 10;
 }
 
-
-
-
+#enlaces{
+    display: flex;
+    justify-content: space-between;
+}
+#google_translate_element{
+    right: 2%;
+    position: fixed;
+    top: 5%;
+}
+#planeta{
+    height: 45%;
+    width: 35%;
+}
 
 
 

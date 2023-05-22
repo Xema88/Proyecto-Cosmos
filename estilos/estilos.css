@@ -51,8 +51,9 @@ main p{
     padding-left: 1%;
     padding-bottom: 4em;
 }
-#animacion{
-  padding-left: 4em;
+#animation{
+  height: 50vh;
+  width: 100%;
 }
 
 footer{
@@ -86,7 +87,7 @@ footer{
   
 #menu li {
   padding: 10px;
-  border-bottom: 1px solid #00254d;
+  border-bottom: 1px solid #005dc0;
 }
 
 #menu li:hover {
@@ -114,6 +115,7 @@ footer{
   z-index: 10;
 }
 #boton_menu{
+  font-size:xx-large;
   left: 2%;
   position: fixed;
   top: 2%;
